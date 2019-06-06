@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>我的评论</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+	<style type="text/css">
+		.weui-navbar__item.weui-bar__item--on {
+			color: #fdb901;
+			background-color: #fff;
+		}
+		
+		.weui-navbar__item:before.weui-bar__item--on {
+			display: block;
+			width: 50%;
+			height: 1px;
+			background: #fdbf46;
+			content: '';
+			position: absolute;
+			left: 10%;
+			bottom: 0;
+		}
+		
+		.weui-navbar__item {
+			position: relative;
+			background: #fff;
+		}
+		
+		.weui-navbar:after {
+			border-bottom: none;
+		}
+		
+		.weui-navbar__item:after {
+			border-right: none;
+		}
+		
+		.weui-panel {
+			margin: .2rem;
+		}
+		.weui-panel:first-child{
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body ontouchstart>
+	<div class="page">
+		<!-- 容器 -->
+		<div class="weui-tab">
+			<div class="weui-navbar">
+				<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+					待评价
+				</a>
+				<a class="weui-navbar__item" href="#tab2">
+					已评价
+				</a>
+			</div>
+			<!--tab切换体-->
+			<div class="weui-tab__bd">
+				<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+					<div class="weui-panel weui-panel_access">
+						<div class="weui-panel__bd">
+							<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="images/icon/avatar.jpg">
+								</div>
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">哈乐时光</h4>
+									<p class="weui-media-box__desc">店铺介绍店铺介绍店铺介绍店铺介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+								</div>
+							</a>
+						</div>
+						<div class="weui-panel__ft">
+							<a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+								<div class="weui-cell__bd tc homes"><span class="gocommend"></span>去评价</div>
+							</a>
+						</div>
+					</div>
+					<div class="weui-panel weui-panel_access">
+						<div class="weui-panel__bd">
+							<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__hd">
+									<img class="weui-media-box__thumb" src="images/icon/avatar.jpg">
+								</div>
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">哈乐时光</h4>
+									<p class="weui-media-box__desc">店铺介绍店铺介绍店铺介绍店铺介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+								</div>
+							</a>
+						</div>
+						<div class="weui-panel__ft">
+							<a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+								<div class="weui-cell__bd tc homes"><span class="gocommend"></span>去评价</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+				<!--已评论-->
+				<div id="tab2" class="weui-tab__bd-item">
+					<!--循环此容器-->
+					<div class="commend-finshed flex flex_sb">
+						<!--评价人头像-->
+						<div class="commend-userimg">
+							<img src="images/icon/avatar.jpg"/>
+						</div>
+						<!--评价主体-->
+						<div class="commend-usercom ml2">
+							<div class="commend-heads flex flex_sb aic">
+								<div class="commend-heads-left">
+									<h4 class="fs32 color3 ellipsis ftW">用户名用户名008</h4>
+									<!--评价星星组件，通过传入active个数暂时高亮-->
+									<div class="star flex flex_left">
+										<span class="active"></span>
+										<span class="active"></span>
+										<span class="active"></span>
+										<span class="active"></span>
+										<span class=""></span>
+										<i class="homes fs26">4.0分</i>
+									</div>
+								</div>
+								<div class="commend-heads-time color9">3分钟前</div>
+							</div>
+							<!--评论内容及图片-->
+							<div class="commend-info">
+								<div class="commend-info-txt fs32 tj">用户评论用户评论用户评论用户评论用户评论用户评论用户评论.</div>
+								<div class="commend-info-img flex flex_left flex_wrap">
+									<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+									<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+									<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+								</div>
+							</div>
+							<!--主题-->
+							<div class="weui-panel weui-panel_access" style="background: #f6f6f6;">
+								<div class="weui-panel__bd">
+									<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+										<div class="weui-media-box__hd">
+											<img class="weui-media-box__thumb" src="images/icon/avatar.jpg">
+										</div>
+										<div class="weui-media-box__bd">
+											<h4 class="weui-media-box__title">哈乐时光</h4>
+											<p class="weui-media-box__desc">店铺介绍店铺介绍店铺介绍店铺介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<!--删除此条评论-->
+							<div class="commend-delete"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+	</script>
+</body>
+
+</html>

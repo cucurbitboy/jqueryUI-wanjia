@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>我的消息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<body ontouchstart>
+	<div class="page">
+		<div class="message-item">
+			<p class="tc fs26 color6">2018-9-21</p>
+			<div class="message-box mt1">
+				<div class="message-head flex flex_sb aic">
+					<h4 class="fs36">标题标题标题标题标题标题</h4>
+					<span class="delete-message"></span>
+				</div>
+				<div class="message-body mt2">
+					<p class="tj color6 fs28 ellipsis4">极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID.</p>
+					<p class="zhankai tr mt1 color6">展开</p>
+				</div>
+			</div>
+		</div>
+		<div class="message-item">
+			<p class="tc fs26 color6">2018-9-21</p>
+			<div class="message-box mt1">
+				<div class="message-head flex flex_sb aic">
+					<h4 class="fs36">标题标题标题标题标题标题</h4>
+					<span class="delete-message"></span>
+				</div>
+				<div class="message-body mt2">
+					<p class="tj color6 fs28 ellipsis4">极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID噢ID噢内容极道少女重复接地水泥厂是滴我的萨达姆哦ID.</p>
+					<p class="zhankai tr mt1 color6">展开</p>
+				</div>
+			</div>
+		</div>
+		<div class="message-item">
+			<p class="tc fs26 color6">2018-9-21</p>
+			<div class="message-box mt1">
+				<div class="message-head flex flex_sb aic">
+					<h4 class="fs36">标题标题标题标题标题标题</h4>
+					<span class="delete-message"></span>
+				</div>
+				<div class="message-body mt2">
+					<p class="tj color6 fs28 ellipsis4">极道少女重萨达姆哦ID.</p>
+					<p class="zhankai tr mt1 color6">展开</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/city-picker.min.js"></script>
+<script>
+	$(function() {
+		FastClick.attach(document.body);
+	});
+	$('.message-item').find('.zhankai').click(function(){
+		if($(this).html() == '展开'){
+			$(this).prev('p').removeClass('ellipsis4');
+			$(this).html('收起')
+		}else{
+			$(this).prev('p').addClass('ellipsis4');
+			$(this).html('展开')
+		}
+	})
+
+//	function zhankai(){
+//		console.log($(this))
+//		console.log(this)
+//
+//				if($(this).html() == '展开'){
+//					$(this).prev('p').removeClass('ellipsis4');
+//					$(this).html('收起')
+//				}else{
+//					$(this).prev('p').addClass('ellipsis4');
+//					$(this).html('展开')
+//				}
+//
+//	}
+	
+</script>
+</body>
+</html>

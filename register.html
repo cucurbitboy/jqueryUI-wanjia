@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<style type="text/css">
+	input::-ms-input-placeholder {
+		text-align: right;
+	}
+	
+	input::-webkit-input-placeholder {
+		text-align: right;
+	}
+</style>
+
+<body ontouchstart>
+	<div class="login-container">
+		<div class="login-logo">
+			<img src="images/img/logo.png" />
+		</div>
+		<form action="" method="post">
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">我的昵称</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="请输入昵称">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">宝宝姓名</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="text" placeholder="请输入宝宝姓名">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">您的身份</label></div>
+					<div class="weui-cell__bd weui-cells_checkbox flex  flex_right">
+						<label class="weui-cell weui-check__label" for="s11" style="padding: 0;">
+				        <div class="weui-cell__hd">
+				          <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+				          <i class="weui-icon-checked"></i>
+				        </div>
+				        <p class="color9">爸爸</p>
+				    </label>
+						<label class="weui-cell weui-check__label" for="s12" style="padding: 0;">
+				        <div class="weui-cell__hd">
+				          <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+				          <i class="weui-icon-checked"></i>
+				        </div>
+				        <p class="color9">妈妈</p>
+				      </label>
+						<label class="weui-cell weui-check__label" for="s13" style="padding: 0;">
+				        <div class="weui-cell__hd">
+				          <input type="checkbox" name="checkbox1" class="weui-check" id="s13">
+				          <i class="weui-icon-checked"></i>
+				        </div>
+				         <p class="color9">其他</p>
+				      </label>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">宝宝性别</label></div>
+					<div class="weui-cell__bd weui-cells_checkbox flex flex_right">
+						<label class="weui-cell weui-check__label" for="s14" style="padding: 0;">
+				        <div class="weui-cell__hd">
+				          <input type="checkbox" class="weui-check" name="checkbox1" id="s14" checked="checked">
+				          <i class="weui-icon-checked"></i>
+				        </div>
+				        <p class="color9">男</p>
+				    </label>
+						<label class="weui-cell weui-check__label" for="s15" style="padding: 0;">
+				        <div class="weui-cell__hd">
+				          <input type="checkbox" name="checkbox1" class="weui-check" id="s15">
+				          <i class="weui-icon-checked"></i>
+				        </div>
+				        <p class="color9">女</p>
+				      </label>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label for="" class="weui-label">宝宝生日</label></div>
+					<div class="weui-cell__bd color9">
+						<input class="weui-input tr color9" type="date" value="">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">手机号码</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="tel" placeholder="请输入您的手机号">
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_vcode">
+					<div class="weui-cell__hd">
+						<label class="weui-label">验证码</label>
+					</div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="tel" placeholder="请输入验证码">
+					</div>
+					<div class="weui-cell__ft">
+						<button class="weui-vcode-btn">获取验证码</button>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">登录密码</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="password" placeholder="请输入您的登录密码">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
+					<div class="weui-cell__bd">
+						<input class="weui-input" type="password" placeholder="请再次输入您的密码">
+					</div>
+				</div>
+				<input class="myhome-btn sex" type="submit" name="" id="" value="注 册" />
+			</div>
+		</form>
+		<p class="color6 mt2 tc fs26">
+			<a href="login.html">已有账号?</a>
+		</p>
+	</div>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+	</script>
+</body>
+
+</html>

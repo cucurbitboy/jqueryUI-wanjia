@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>用户评价</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<style>
+	.swiper-pagination-fraction,
+	.swiper-pagination-custom,
+	.swiper-container-horizontal>.swiper-pagination-bullets {
+		bottom: 5px;
+		text-align: right;
+	}
+</style>
+
+<body ontouchstart>
+	<div class="page">
+		<div class="merchant-commendinfo mt2" style="padding: 0;">
+			<div>
+				<div class="commend-finshed flex flex_sb" style="width: 100%;">
+					<!--评价人头像-->
+					<div class="commend-userimg">
+						<img src="images/icon/avatar.jpg" />
+					</div>
+					<!--评价主体-->
+					<div class="commend-usercom ml2">
+						<div class="commend-heads flex flex_sb aic">
+							<div class="commend-heads-left">
+								<h4 class="fs32 color3 ellipsis ftW">用户名用户名008</h4>
+								<!--评价星星组件，通过传入active个数暂时高亮-->
+								<div class="star flex flex_left">
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class=""></span>
+									<i class="homes fs26">4.0分</i>
+								</div>
+							</div>
+							<div class="commend-heads-time color9">3分钟前</div>
+						</div>
+						<!--评论内容及图片-->
+						<div class="commend-info">
+							<div class="commend-info-txt fs32 tj">用户评论用户评论用户评论用户评论用户评论用户评论用户评论.</div>
+							<div class="commend-info-img flex flex_left flex_wrap">
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="merchant-huifu">
+					<span class="color6 fs34">商家回复:</span><span class="ml1 fs28 color9">谢谢，感谢您的用心回复，也感谢您的肯定与支持！我们一定会继续努力。继续保持高品质和高标准服务。</span>
+				</p>
+				<div class="flex flex_right dianzan">
+					<div class="zan">
+						<span></span><i>10</i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="merchant-commendinfo mt2" style="padding: 0;">
+			<div>
+				<div class="commend-finshed flex flex_sb" style="width: 100%;">
+					<!--评价人头像-->
+					<div class="commend-userimg">
+						<img src="images/icon/avatar.jpg" />
+					</div>
+					<!--评价主体-->
+					<div class="commend-usercom ml2">
+						<div class="commend-heads flex flex_sb aic">
+							<div class="commend-heads-left">
+								<h4 class="fs32 color3 ellipsis ftW">用户名用户名008</h4>
+								<!--评价星星组件，通过传入active个数暂时高亮-->
+								<div class="star flex flex_left">
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class="active"></span>
+									<span class=""></span>
+									<i class="homes fs26">4.0分</i>
+								</div>
+							</div>
+							<div class="commend-heads-time color9">3分钟前</div>
+						</div>
+						<!--评论内容及图片-->
+						<div class="commend-info">
+							<div class="commend-info-txt fs32 tj">用户评论用户评论用户评论用户评论用户评论用户评论用户评论.</div>
+							<div class="commend-info-img flex flex_left flex_wrap">
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+								<div class="imgg"><img src="images/icon/avatar.jpg" alt="" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="merchant-huifu">
+					<span class="color6 fs34">商家回复:</span><span class="ml1 fs28 color9">谢谢，感谢您的用心回复，也感谢您的肯定与支持！我们一定会继续努力。继续保持高品质和高标准服务。</span>
+				</p>
+				<div class="flex flex_right dianzan">
+					<div class="zan active">
+						<span></span><i>10</i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+			$(".swiper-container.merchant-banner").swiper({
+				loop: true,
+				autoplay: 3000
+			});
+			$('.dianzan .zan').click(function(){
+				$(this).toggleClass('active')
+			})
+		});
+	</script>
+</body>
+
+</html>

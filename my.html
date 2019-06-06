@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+	<style type="text/css">
+		.forloves {background: url(images/img/enterbgs.jpg) no-repeat center center;background-size: 100% 100%;z-index: 9991;}
+		.my-head-img {position: relative;}
+		.inputimage {width: 100%;height: 100%;position: absolute;left: 0;top: 0;opacity: 0;}
+		.weui-cell__bd{position: relative;}
+		.tognzhi{width: 2.6rem;}
+		.weui-cell__bd > i{position: absolute;left: 1.4rem;top: -5px;width: 20px;height: 20px;border-radius: 50%;overflow: hidden;text-align: center;line-height: 20px;color: #fff;background: red;font-size: 12px;}
+		.tognzhi i{color: red;font-weight: bold;padding-left: 5px;}
+	</style>
+</head>
+<body ontouchstart>
+	<div class="page">
+		<div id="cucurbit"></div>
+		<div class="my-head flex flex_left aic">
+			<div class="my-head-img">
+				<img id="imgimages" src="images/icon/avatar.jpg" alt="" />
+				<input class="inputimage" type="file" name="" id="inputimage" value="" onchange="updataimg(this)" />
+			</div>
+			<div class="fs32 color3 ftW ml2">用户名007</div>
+			<div class="tognzhi">
+				<a href="my-message.html"><span></span>您的消息<i>10</i></a>
+			</div>
+		</div>
+		<div class="my-panel">
+			<div class="my-panel-tit fs30 color3 ftW">我的年卡</div>
+			<div class="my-panel-txt flex flex_left aic">
+				<div class="panel-item">
+					<a href="#">
+						<div class="panel-item-img">
+							<img src="images/img/nianka.png" alt="" />
+						</div>
+						<p class="panel-item-con tc color3 fs30">我的年卡</p>
+					</a>
+				</div>
+				<div class="panel-item">
+					<a href="#">
+						<div class="panel-item-img">
+							<img src="images/img/jihuaka.png" alt="" />
+						</div>
+						<p class="panel-item-con tc color3 fs30">实体卡激活</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--;;;-->
+		<div class="my-banner">
+			<img src="images/img/my-banner.jpg" alt="" />
+			<a href="javascript:void(0)" id="inviter">立即邀请</a>
+		</div>
+		<!------->
+		<div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+				<a href="mysubscribe.html" class="weui-cell weui-cell_access weui-cell_link">
+					<span class="my-yuyue"></span>
+					<div class="weui-cell__bd fs32 color3">我的预约<i>10</i></div>
+					<span class="weui-cell__ft"></span>
+				</a>
+			</div>
+			<div class="weui-panel__ft">
+				<a href="mycommend.html" class="weui-cell weui-cell_access weui-cell_link">
+					<span class="my-commend"></span>
+					<div class="weui-cell__bd fs32 color3">我的评论<i>1</i></div>
+					<span class="weui-cell__ft"></span>
+				</a>
+			</div>
+			<div class="weui-panel__ft">
+				<a href="aboutout.html" class="weui-cell weui-cell_access weui-cell_link">
+					<span class="about-me"></span>
+					<div class="weui-cell__bd fs32 color3">关于万家</div>
+					<span class="weui-cell__ft"></span>
+				</a>
+			</div>
+			<div class="weui-panel__ft">
+				<a href="safe-set.html" class="weui-cell weui-cell_access weui-cell_link">
+					<span class="safe-set"></span>
+					<div class="weui-cell__bd fs32 color3">安全设置</div>
+					<span class="weui-cell__ft"></span>
+				</a>
+			</div>
+		</div>
+		<!--弹框-->
+		<div class="my-alert first">
+			<div class="my-alert-img">
+				<img src="images/icon/avatar.jpg" />
+			</div>
+			<p class="fs30 tc">用户名007</p>
+			<div class="my-alert-qe">
+				<img src="images/img/erweima.png" alt="" />
+			</div>
+			<div class="cancle" id="cancle">
+				<img src="images/img/quxiao.png" alt="" />
+			</div>
+		</div>
+
+
+
+		<!--+++-->
+		<a href="javascript:;" class="weui-btn weui-btn_warn logout">退出</a>
+		<!--FOOT-->
+		<div class="footer flex flex_sa aic">
+			<div class="foot-item">
+				<span></span>
+				<p>首页</p>
+			</div>
+			<div class="foot-item">
+				<span></span>
+				<p>核销码</p>
+			</div>
+			<div class="foot-item">
+				<span></span>
+				<p>入口</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+		$('#inviter').click(function() {
+			$('.my-alert.first').show();
+			$('#cucurbit').addClass('forlove')
+		});
+		$('#cancle').click(function() {
+			$('.my-alert').hide();
+			$('#cucurbit').removeClass('forlove')
+		});
+
+		function updataimg(obj) {
+			var file = obj.files[0];
+			console.log(obj);
+			console.log(file);
+			console.log("file.size = " + file.size);
+			var reader = new FileReader();
+			reader.onloadstart = function(e) {
+				console.log("开始读取....");
+			}
+			reader.onprogress = function(e) {
+				console.log("正在读取中....");
+			}
+			reader.onabort = function(e) {
+				console.log("中断读取....");
+			}
+			reader.onerror = function(e) {
+				console.log("读取异常....");
+			}
+			reader.onload = function(e) {
+				console.log("成功读取....");
+				var img = document.getElementById("imgimages");
+				img.src = e.target.result;
+				console.log(e.target.result)
+			}
+			reader.readAsDataURL(file)
+
+			//上传文件
+			// var fd = new FormData(),
+			// xhr = new XMLHttpRequest();
+			// fd.append('headimg', files[0]);
+			// xhr.open('post', 'user.php?act=act_edit_img');
+			// xhr.send(fd);
+		}
+	</script>
+</body>
+</html>

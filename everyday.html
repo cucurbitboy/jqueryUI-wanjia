@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<style type="text/css">
+	.toolbar{
+		background: #fff;
+	}
+	.picker-calendar-week-days{
+		background: #fff;
+	}
+	.picker-calendar-day.picker-calendar-day-selected span{
+		background: #fdb83b;
+	}
+	.picker-calendar-week-days + .picker-calendar-months{
+		height: 4rem;
+	}
+	.picker-calendar-week-days{
+		height: .5rem;
+	}
+	.picker-calendar-row:after{
+		background-color: #fff;
+	}
+	.picker-calendar-week-days:after{
+		background-color: #fff;
+	}
+	.toolbar-inner{
+		display: none!important;
+	}
+	#calendar-year{
+		position: relative;
+		color: #e2e2e2;
+		font-size: 1.02rem;
+		padding: .2rem;
+	}
+	#calendar-month{
+		position: absolute;
+		left: 1rem;
+		bottom: .2rem;
+		color: #fdb83b;
+		font-size: .56rem;
+	}
+	.user-edit{
+		padding: .2rem;
+		width: 90%;
+		margin: 0 auto;
+		background: #f2f2f2;
+	}
+	.user-edit textarea{
+		margin-top: .2rem;
+		padding: .2rem;
+		background: #f2f2f2;
+	}
+</style>
+
+<body ontouchstart>
+	<div id="calendar-year"><i>2016</i> <span id="calendar-month"><i>9</i>月</span></div>
+	
+	<div class="weui-cells weui-cells_form" style="display: none;">
+		<div class="weui-cell">
+			<div class="weui-cell__hd"><label for="date3" class="weui-label">日期</label></div>
+			<div class="weui-cell__bd">
+				<input class="weui-input" id="date3" type="text">
+			</div>
+		</div>
+	</div>
+	<div id="inline-calendar" style="height: 5rem;"></div>
+	
+	<div class="user-edit">
+		<p style="color: #468769;font-size: .32rem;">其他备注内容:</p>
+		<textarea style="width: 100%;" name="" rows="10" cols="" placeholder="预约备注"></textarea>
+	</div>
+	<div>
+		<a href="javascript:void(0)" class="myhome-btn">确 定</a>
+		<p class="color9 tj" style="padding: 0 .4rem;margin-top: -.9rem;">备注：只可以预约当月，且灰色时间状态，则表示当天时间不可预约</p>
+	</div>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+		$("#date3").calendar({
+			container: "#inline-calendar",
+			dayNamesShort: ['日', '一', '二', '三', '四', '五', '六'],
+			onChange: function (p, values, displayValues){
+				console.log(p);
+				console.log(values);
+				console.log(displayValues);
+				$('#calendar-year>i').html(values[0].split('/')[0]);
+				$('#calendar-month > i').html(values[0].split('/')[1]);
+			}
+		});
+	</script>
+</body>
+
+</html>

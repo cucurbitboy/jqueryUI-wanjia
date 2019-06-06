@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+	<style type="text/css">
+		.hx-item{
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+
+<body ontouchstart style="background: #eee;">
+	<div class="page">
+		<div class="index-list">
+			<div class="hx-item">
+				<div class="list-one index-lists">
+					<img src="images/img/index3.jpg" alt="" />
+					<div class="topshow">
+						<a href="javascript:viod(0)">
+							<h3>万家亲子<span class="cicle"></span>分类年卡</h3>
+							<p><span class="xioagnmao"></span>NO. 1001 2121 457</p>
+							<span class="tip-right fs24">! 后天即将过期</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hx-item">
+				<div class="list-one index-lists">
+					<img src="images/img/index3.jpg" alt="" />
+					<div class="topshow">
+						<a href="javascript:viod(0)">
+							<h3>万家亲子<span class="cicle"></span>分类年卡</h3>
+							<p><span class="xioagnmao"></span>NO. 1001 2121 457</p>
+							<span class="tip-right fs24">! 后天即将过期</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/jquery-weui.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/city-picker.min.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+			$('.footer .foot-item').each(function() {
+			if (this.href==window.location.href) {
+				$('.footer .foot-item').removeClass("active");
+				$(this).addClass('active');
+			};
+		});
+		});
+	</script>
+</body>
+
+</html>

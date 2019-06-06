@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>万家首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" href="css/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/rem.js"></script>
+</head>
+<style type="text/css">
+	.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+		bottom: 5px;
+	    text-align: right;
+	}
+</style>
+<body ontouchstart>
+  <div class="page">
+  	<!--banner-->
+  	<div class="swiper-container index-banner">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="images/img/banner.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="images/img/index2.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="images/img/banner.jpg" alt=""></div>
+	    <div class="swiper-slide"><img src="images/img/banner.jpg" alt=""></div>
+	  </div>
+	  <div class="swiper-pagination"></div>
+	</div>
+	<!--LIST-->
+	<div class="index-list index-lists">
+		<div class="list-one">
+			<img src="images/img/index1.jpg" alt="" />
+			<div class="topshow">
+				<a href="javascript:viod(0)">
+				<h3>万家亲子<span class="cicle"></span>分类年卡</h3>
+			    <p>商品购物，应有尽有，轻松购物</p>
+			    <span class="arrow-right"></span>
+			</a>
+			</div>
+		</div>
+		<div class="list-one">
+			<img src="images/img/index2.jpg" alt="" />
+			<div class="topshow">
+				<a href="javascript:viod(0)">
+				<h3>万家亲子<span class="cicle"></span>分类年卡</h3>
+			    <p>商品购物，应有尽有，轻松购物</p>
+			    <span class="arrow-right"></span>
+			</a>
+			</div>
+		</div>
+		<div class="list-one">
+			<img src="images/img/index3.jpg" alt="" />
+			<div class="topshow">
+				<a href="javascript:viod(0)">
+				<h3>万家亲子<span class="cicle"></span>分类年卡</h3>
+			    <p>商品购物，应有尽有，轻松购物</p>
+			    <span class="arrow-right"></span>
+			</a>
+			</div>
+		</div>
+	</div>
+	<!--FOOT-->
+	<div style="height: 2rem;"></div>
+	<div class="footer flex flex_sa aic">
+		<div class="foot-item active">
+			<a href="index.html">
+				<span></span>
+				<p>首页</p>
+			</a>
+		</div>
+		<div class="foot-item">
+			<a href="hxcode.html">
+				<span></span>
+				<p>核销码</p>
+			</a>
+		</div>
+		<div class="foot-item">
+			<a href="my.html">
+				<span></span>
+				<p>入口</p>
+			</a>
+		</div>
+	</div>
+  </div>
+  
+  
+</div>
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.js"></script>
+<script src="js/city-picker.min.js"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function() {
+		FastClick.attach(document.body);
+		$(".swiper-container.index-banner").swiper({
+		    loop: true,
+		    autoplay: 3000
+		});
+		$('.footer .foot-item').each(function() {
+			if (this.href==window.location.href) {
+				$('.footer .foot-item').removeClass("active");
+				$(this).addClass('active');
+			};
+		});
+	});
+</script>
+</body>
+</html>

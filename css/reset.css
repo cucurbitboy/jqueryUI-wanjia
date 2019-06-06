@@ -1,0 +1,212 @@
+
+@charset "UTF-8";
+@charset "utf-8";
+
+html,body{ font-size:.28rem; font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; color: #333; tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; -ms-tap-highlight-color: transparent;}
+body{ width: 7.5rem; margin: 0 auto; overflow-x:hidden; background: #fff;position: relative; color: #333;}
+input{ font-size: .28rem;}
+
+*{ margin:0px; padding:0px; -webkit-box-sizing: border-box;	-moz-box-sizing: border-box; box-sizing: border-box;}
+*:before, *:after {	-webkit-box-sizing: border-box;	-moz-box-sizing: border-box; box-sizing: border-box;}
+
+ul,li{ list-style:none;}
+h1,h2,h3,h4,h5,h6,input,select,textarea,option,button{ font-weight:normal;}
+
+a{ text-decoration:none; outline:none; color: inherit; font-size: inherit;}
+a:hover{ text-decoration:none;}
+*,a,button,input,select,option,img,dl,dd,div,label,textarea{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+input[type="button"], input[type="submit"], input[type="text"],input[type="tel"],input[type="email"],input[type="number"],textarea,button{ -webkit-appearance: none; border-radius: 0; -webkit-box-sizing: border-box; border-box: box-sizing; -moz-box-sizing: box-sizing; color: ##A70F04; outline:none; border: none;}
+input:focus{ outline:none; }
+
+em,i{ font-style:normal;} 
+textarea{ resize:none;}
+
+
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{ border:none;padding:0;}
+input,textarea,select,option,button,form,fieldset{margin:0;padding:0;border-width:1px;outline:none; font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", "微软雅黑", SimSun, sans-serif;}
+/*placeholder��ʽ*/
+:-moz-placeholder { color: #a0a0a0; }
+::-moz-placeholder {color: #a0a0a0;}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {color: #a0a0a0;}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color: #a0a0a0;}
+
+
+.tl{ text-align:left;}
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.tj{text-align: justify;}
+
+dl,dd,dt{ text-align: left; }
+
+.ml0{ margin-left: 0 ! important; }
+.mt0{ margin-top: 0 ! important; }
+
+.clearfix{zoom:1; }
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:"";}
+.clearfix:after{clear:both;}
+
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clear{ clear:both;}
+
+
+  img{ border:none; width:100%; vertical-align: middle; height: 100%;}
+
+.ellipsis{ display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;} 
+.ellipsis2{
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+}
+.ellipsis4{
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 4;
+ 	-webkit-box-orient: vertical;
+}
+
+.fs18{ font-size:.18rem;}
+.fs20{ font-size:.2rem;}
+.fs22{ font-size:.22rem;}
+.fs24{ font-size:.24rem;}
+.fs26{ font-size:.26rem;}
+.fs28{ font-size:.28rem;}
+.fs30{ font-size:.3rem;}
+.fs32{ font-size:.32rem;}
+.fs34{ font-size:.34rem;}
+.fs35{ font-size:.35rem;}
+.fs36{ font-size:.36rem!important;}
+.fs40{ font-size:.4rem;}
+  
+
+.ftW{ font-weight:bold;}
+.ftwn{ font-weight:normal;}
+
+.ftS{ font-style:italic;}
+.ftsn{ font-style:normal;}
+
+.mt1{ margin-top: .1rem; }
+.mt2{ margin-top: .2rem; }
+.mt3{ margin-top: .3rem; }
+.mt4{ margin-top: .4rem; }
+.mt5{ margin-top: .5rem; }
+.mt9{ margin-top: .9rem; }
+.mt10{ margin-top: 1rem; }
+.mt12{ margin-top: 1.2rem; }
+.mt13{ margin-top: 1.3rem; }
+
+.ml1{ margin-left: .1rem; }
+.ml2{ margin-left: .2rem; }
+.ml3{ margin-left: .3rem; }
+.ml4{ margin-left: .4rem; }
+.ml5{ margin-left: .5rem; }
+.white{color: #fff!important;}
+.color3{color: #333!important;}
+.color6{color: #666;}
+.color9{color: #999;}
+.cur{cursor: default;}
+.blue{color: #0062CC;}
+.green{color: #19bb1d;}
+.red{color: #ff010b!important;}
+.home{color: #237cc1;}
+.orange{color: #f7740a;}
+
+
+.forlove{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.3);
+	z-index: 99;
+}
+.transition4{
+	 transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+.rotate90{
+	transform:rotate(-90deg);   
+	-webkit-transform:rotate(-90deg);    
+	-moz-transform:rotate(-90deg);   
+	-o-transform:rotate(-90deg);   
+    -ms-transform:rotate(-90deg);   
+}
+.flex{
+	display: flex;
+	display: -webkit-box; 
+	display: -webkit-flex;
+}
+.flex_row{
+	flex-direction: row;
+}
+.flex_column{
+	flex-direction: column;
+}
+.flex_wrap{flex-wrap: wrap;}
+/*body 主轴位置*/
+.flex_left{
+	justify-content: flex-start;
+}
+.flex_right{
+	justify-content: flex-end;
+}
+.flex_sa{
+	justify-content: space-around;
+}
+.flex_sb{
+	justify-content: space-between;
+}
+.flex_c{justify-content: center;}
+
+
+.flex1{flex: 1;}
+/*body,纵轴位置*/
+.aic{align-items: center;}
+.ait{align-items: flex-start;}
+.aib{align-items: flex-end;}
+.aif{align-items: stretch;}
+
+/*item,纵轴方向位置*/
+.asc{align-self: center;}
+.ast{align-self: flex-start;}
+.asb{align-self: flex-end;}
+.ass{align-self: stretch;}
+
+.flexs{
+	justify-content: flex-start;
+}
+/*item放大 ,default:0*/
+.fg1{flex-grow: 1;}
+.fg2{flex-grow: 2;}
+.fg3{flex-grow: 3;}
+.fg4{flex-grow: 4;}
+.fg5{flex-grow: 5;}
+/*item缩小 ,default1如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，为0缩小*/
+.fs0{flex-shrink: 0;}
+
+
+
+
+@font-face {font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
